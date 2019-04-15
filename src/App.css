@@ -1,33 +1,80 @@
 .App {
-  text-align: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+label,
+textarea {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  letter-spacing: 1.2;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+textarea:focus {
+  outline-color: #d7e0e5;
+}
+
+form {
+  padding: 20px;
+  border: 2px solid #d7e0e5;
+  border-radius: 4px;
+}
+
+.label-stars {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.react-rater-star {
+  color: #eed5b3;
+}
+
+.react-rater-star.will-be-active {
+  color: #eea337;
+}
+
+.react-rater-star.is-active {
+  color: #eea337;
+}
+
+.feedback {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: flex-end; */
+  margin-top: 50px;
+  line-height: 1.3;
+  border-bottom: 2px solid #d7e0e5;
+  padding-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.feedback > div {
+  /* display: flex; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  align-self: center;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 5px 0;
+  float: left;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
 }

@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "node-fetch": "^2.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-loading-bar": "0.0.7",
+    "react-rater": "^5.0.5",
     "react-scripts": "2.1.8"
   },
   "scripts": {
