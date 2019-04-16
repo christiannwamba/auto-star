@@ -7,7 +7,7 @@ import './App.css';
 
 class App extends Component {
   url =
-    process.env.NODE_ENV !== 'production'
+    process.env.NODE_ENV === 'production'
       ? 'https://autostar17.azurewebsites.net/api/'
       : 'http://localhost:7071/api/';
 
