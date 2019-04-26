@@ -3,7 +3,7 @@ const MongoClient = mongodb.MongoClient;
 
 module.exports = function(context, req) {
   const mongoConnectionUrl =
-    'mongodb://codebeast:password1@ds042459.mlab.com:42459/autostar';
+    'mongodb://DATABASE-URL';
   const dbName = `autostar`;
 
   MongoClient.connect(mongoConnectionUrl, (err, client) => {
